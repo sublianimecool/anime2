@@ -3176,10 +3176,10 @@ body {
             if (heroVid) {
                 heroVid.play().catch(() => {});
                 
-                // Zero delay loop handling
+                // Zero delay loop handling (forces loop at 9.0s to bypass video end error)
                 heroVid.addEventListener('timeupdate', function() {
-                    // Reset slightly before the absolute end to avoid browser delay
-                    if (this.currentTime >= this.duration - 0.08) {
+                    // Reset slightly before 9.0s (at 8.92s) for a seamless loop transition
+                    if (this.currentTime >= 8.92) {
                         this.currentTime = 0;
                         this.play().catch(() => {});
                     }
