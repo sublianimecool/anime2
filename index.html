@@ -226,14 +226,26 @@
 
             0%,
             100% {
-                box-shadow: 0 0 20px rgba(232, 48, 140, 0.4);
+                box-shadow: 0 0 20px rgba(0, 255, 102, 0.4);
                 transform: scale(1);
             }
 
             50% {
-                box-shadow: 0 0 50px rgba(232, 48, 140, 0.8);
+                box-shadow: 0 0 50px rgba(0, 255, 102, 0.8);
                 transform: scale(1.02);
             }
+        }
+
+        .btn-neon-green {
+            background: linear-gradient(to right, #00ff66, #00b344) !important;
+            color: #ffffff !important;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 10px 20px rgba(0, 255, 102, 0.3) !important;
+        }
+
+        .btn-neon-green:hover {
+            background: linear-gradient(to right, #00ff88, #00cc55) !important;
+            box-shadow: 0 15px 30px rgba(0, 255, 102, 0.6) !important;
         }
 
         .faq-answer {
@@ -1903,12 +1915,12 @@ body {
 @keyframes pulseGlow {
   0%,
     100% {
-    box-shadow: 0 0 20px rgba(232, 48, 140, 0.4);
+    box-shadow: 0 0 20px rgba(0, 255, 102, 0.4);
     transform: scale(1);
   }
 
   50% {
-    box-shadow: 0 0 50px rgba(232, 48, 140, 0.8);
+    box-shadow: 0 0 50px rgba(0, 255, 102, 0.8);
     transform: scale(1.02);
   }
 }
@@ -2239,41 +2251,87 @@ body {
 
     <!-- SECCIÓN 2: AGITACIÓN DEL PROBLEMA -->
     <section class="py-20 px-4 bg-darkBg border-y border-neonPink/20">
-        <div class="max-w-4xl mx-auto">
-            <div data-aos="fade-up" class="text-center mb-12">
-                <h2 class="font-grotesk text-3xl md:text-5xl font-bold mb-4">La cruda realidad de conseguir diseños
-                    brutales <br class="hidden md:block" /> <span class="text-red-500">que vendan.</span></h2>
+        <div class="max-w-3xl mx-auto">
+            <p data-aos="fade-up"
+                class="text-lg md:text-2xl text-center text-gray-300 font-bold mb-10 max-w-2xl mx-auto">
+                La colección definitiva para impresión a pedido, camisetas, sudaderas y mercancía.
+            </p>
+
+            <div class="space-y-4 text-left max-w-xl mx-auto">
+                <div data-aos="fade-up" data-aos-delay="50"
+                    class="flex items-start gap-4 p-5 rounded-2xl bg-darkCard border border-white/5 hover:border-white/20 transition-all shadow-lg shadow-black/50">
+                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">🎨</span>
+                    <div>
+                        <p class="font-black text-white text-base md:text-lg leading-snug">Compatible con sublimación,
+                            DTF, vinilo, serigrafía y más</p>
+                        <p class="text-sm text-gray-400 mt-1">Funciona con CUALQUIER técnica de impresión, sin importar
+                            tu equipo.</p>
+                    </div>
+                </div>
+                <!-- Característica 2 -->
+                <div data-aos="fade-up" data-aos-delay="100"
+                    class="flex items-start gap-4 p-5 rounded-2xl bg-darkCard border border-white/5 hover:border-white/20 transition-all shadow-lg shadow-black/50">
+                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">💎</span>
+                    <div>
+                        <p class="font-black text-white text-base md:text-lg leading-snug">Alta resolución real — sin
+                            píxeles, sin bordes cortados</p>
+                        <p class="text-sm text-gray-400 mt-1">Cada imagen está preparada para impresión profesional.
+                            Calidad que se nota.</p>
+                    </div>
+                </div>
+                <!-- Característica 3 -->
+                <div data-aos="fade-up" data-aos-delay="150"
+                    class="flex items-start gap-4 p-5 rounded-2xl bg-darkCard border border-white/5 hover:border-white/20 transition-all shadow-lg shadow-black/50">
+                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">⚡</span>
+                    <div>
+                        <p class="font-black text-white text-base md:text-lg leading-snug">Listo para usar hoy mismo —
+                            sin editar, sin perder tiempo</p>
+                        <p class="text-sm text-gray-400 mt-1">+45,000 archivos con fondo transparente. Descarga y
+                            empieza a vender.</p>
+                    </div>
+                </div>
+                <!-- Característica 4 -->
+                <div data-aos="fade-up" data-aos-delay="200"
+                    class="flex items-start gap-4 p-5 rounded-2xl bg-darkCard border border-white/5 hover:border-white/20 transition-all shadow-lg shadow-black/50">
+                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">👕</span>
+                    <div>
+                        <p class="font-black text-white text-base md:text-lg leading-snug">Ideal para camisetas, tazas,
+                            termos, mochilas, fundas y lo que imagines</p>
+                        <p class="text-sm text-gray-400 mt-1">Diseños versátiles que se adaptan a cualquier producto y
+                            nicho.</p>
+                    </div>
+                </div>
+                <!-- Característica 5 -->
+                <div data-aos="fade-up" data-aos-delay="250"
+                    class="flex items-start gap-4 p-5 rounded-2xl bg-darkCard border border-white/5 hover:border-white/20 transition-all shadow-lg shadow-black/50">
+                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">🕐</span>
+                    <div>
+                        <p class="font-black text-white text-base md:text-lg leading-snug">Ahorra 500+ horas de trabajo
+                            con +45,000 personajes organizados</p>
+                        <p class="text-sm text-gray-400 mt-1">Todo clasificado, todo al alcance. Directo al grano.</p>
+                    </div>
+                </div>
+                <!-- Característica 6 -->
+                <div data-aos="fade-up" data-aos-delay="300"
+                    class="flex items-start gap-4 p-5 rounded-2xl bg-darkCard border border-white/5 hover:border-white/20 transition-all shadow-lg shadow-black/50">
+                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">🛠️</span>
+                    <div>
+                        <p class="font-black text-white text-base md:text-lg leading-snug">Formatos editables incluidos
+                            — PNG, PSD, PDF, AI y más</p>
+                        <p class="text-sm text-gray-400 mt-1">Máxima flexibilidad para personalizar cada diseño a tu
+                            gusto.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-6">
-                <div data-aos="fade-up" data-aos-delay="100"
-                    class="bg-darkCard p-6 rounded-2xl border border-white/5 hover:border-red-500/50 transition-colors">
-                    <div class="w-12 h-12 rounded-full bg-red-500/10 flex items-center justify-center mb-4">
-                        <span class="text-2xl">⏳</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 text-white">Pierdes Horas Editando</h3>
-                    <p class="text-gray-400 text-sm">Descargas imágenes "gratuitas" que vienen con fondos horribles.
-                        Pasas horas borrando fondos y el resultado siempre se ve poco profesional en la prenda.</p>
-                </div>
-                <div data-aos="fade-up" data-aos-delay="200"
-                    class="bg-darkCard p-6 rounded-2xl border border-white/5 hover:border-red-500/50 transition-colors">
-                    <div class="w-12 h-12 rounded-full bg-red-500/10 flex items-center justify-center mb-4">
-                        <span class="text-2xl">💸</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 text-white">Costos Asfixiantes</h3>
-                    <p class="text-gray-400 text-sm">Contratas diseñadores en Fiverr o Upwork, te cobran $15 o $20
-                        dólares por UN SOLO DISEÑO y tardan días en entregar. Tu margen de ganancia desaparece.</p>
-                </div>
-                <div data-aos="fade-up" data-aos-delay="300"
-                    class="bg-darkCard p-6 rounded-2xl border border-white/5 hover:border-red-500/50 transition-colors">
-                    <div class="w-12 h-12 rounded-full bg-red-500/10 flex items-center justify-center mb-4">
-                        <span class="text-2xl">📉</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 text-white">Te Quedas Atrás</h3>
-                    <p class="text-gray-400 text-sm">Mientras tú estás varado buscando el diseño perfecto bajado de
-                        Google, tu competencia acaba de lanzar 50 nuevos modelos en su tienda y se está llevando a tus
-                        clientes.</p>
-                </div>
+            <!-- CTA DE ACCIÓN RÁPIDA DE LA SECCIÓN DE ARRIBA -->
+            <div data-aos="fade-up" data-aos-delay="350" class="mt-10 max-w-xl mx-auto">
+                <a href="https://mpt69i-rg.myshopify.com/cart/43899691171927:1" target="_blank" rel="noopener noreferrer" class="block w-full">
+                    <button class="pulse-btn btn-neon-green w-full py-4 md:py-5 rounded-xl text-white font-black text-lg md:text-xl transition-all transform hover:-translate-y-1">
+                        ¡Quiero sublimar mis +45.000 diseños anime!
+                    </button>
+                </a>
+                <p class="text-center text-xs text-gray-500 mt-2 italic">Acceso inmediato · Pago único · Sin suscripciones</p>
             </div>
         </div>
     </section>
@@ -2426,7 +2484,7 @@ body {
                 <!-- CTA ANTICIPADO - COMPRADOR IMPULSIVO -->
                 <div data-aos="fade-up" data-aos-delay="200" class="mt-8">
                     <a href="https://mpt69i-rg.myshopify.com/cart/43899691171927:1" target="_blank" rel="noopener noreferrer" class="block w-full">
-                        <button class="pulse-btn w-full py-4 md:py-5 rounded-xl bg-gradient-to-r from-neonPink to-purple-600 hover:from-pink-500 hover:to-purple-500 text-white font-black text-lg md:text-xl transition-all shadow-[0_10px_20px_rgba(232,48,140,0.3)] hover:shadow-[0_15px_30px_rgba(232,48,140,0.5)] transform hover:-translate-y-1">
+                        <button class="pulse-btn btn-neon-green w-full py-4 md:py-5 rounded-xl text-white font-black text-lg md:text-xl transition-all transform hover:-translate-y-1">
                             ⚡ QUIERO MIS +45,000 DISEÑOS POR SOLO $19.900 COP
                         </button>
                     </a>
@@ -2439,77 +2497,40 @@ body {
 
     <!-- SECCIÓN EMOJIS ANIMADOS (CARACTERÍSTICAS) -->
     <section class="py-16 px-4 bg-cyber">
-        <div class="max-w-3xl mx-auto">
-            <p data-aos="fade-up"
-                class="text-lg md:text-2xl text-center text-gray-300 font-bold mb-10 max-w-2xl mx-auto">
-                La colección definitiva para impresión a pedido, camisetas, sudaderas y mercancía.
-                <strong class="text-neonPink">Uso comercial incluido.</strong>
-            </p>
+        <div class="max-w-4xl mx-auto">
+            <div data-aos="fade-up" class="text-center mb-12">
+                <h2 class="font-grotesk text-3xl md:text-5xl font-bold mb-4">La cruda realidad de conseguir diseños
+                    brutales <br class="hidden md:block" /> <span class="text-red-500">que vendan.</span></h2>
+            </div>
 
-            <div class="space-y-4 text-left max-w-xl mx-auto">
-                <div data-aos="fade-up" data-aos-delay="50"
-                    class="flex items-start gap-4 p-5 rounded-2xl bg-darkCard border border-white/5 hover:border-white/20 transition-all shadow-lg shadow-black/50">
-                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">🎨</span>
-                    <div>
-                        <p class="font-black text-white text-base md:text-lg leading-snug">Compatible con sublimación,
-                            DTF, vinilo, serigrafía y más</p>
-                        <p class="text-sm text-gray-400 mt-1">Funciona con CUALQUIER técnica de impresión, sin importar
-                            tu equipo.</p>
-                    </div>
-                </div>
-                <!-- Característica 2 -->
+            <div class="grid md:grid-cols-3 gap-6">
                 <div data-aos="fade-up" data-aos-delay="100"
-                    class="flex items-start gap-4 p-5 rounded-2xl bg-darkCard border border-white/5 hover:border-white/20 transition-all shadow-lg shadow-black/50">
-                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">💎</span>
-                    <div>
-                        <p class="font-black text-white text-base md:text-lg leading-snug">Alta resolución real — sin
-                            píxeles, sin bordes cortados</p>
-                        <p class="text-sm text-gray-400 mt-1">Cada imagen está preparada para impresión profesional.
-                            Calidad que se nota.</p>
+                    class="bg-darkCard p-6 rounded-2xl border border-white/5 hover:border-red-500/50 transition-colors">
+                    <div class="w-12 h-12 rounded-full bg-red-500/10 flex items-center justify-center mb-4">
+                        <span class="text-2xl">⏳</span>
                     </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">Pierdes Horas Editando</h3>
+                    <p class="text-gray-400 text-sm">Descargas imágenes "gratuitas" que vienen con fondos horribles.
+                        Pasas horas borrando fondos y el resultado siempre se ve poco profesional en la prenda.</p>
                 </div>
-                <!-- Característica 3 -->
-                <div data-aos="fade-up" data-aos-delay="150"
-                    class="flex items-start gap-4 p-5 rounded-2xl bg-darkCard border border-white/5 hover:border-white/20 transition-all shadow-lg shadow-black/50">
-                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">⚡</span>
-                    <div>
-                        <p class="font-black text-white text-base md:text-lg leading-snug">Listo para usar hoy mismo —
-                            sin editar, sin perder tiempo</p>
-                        <p class="text-sm text-gray-400 mt-1">+45,000 archivos con fondo transparente. Descarga y
-                            empieza a vender.</p>
-                    </div>
-                </div>
-                <!-- Característica 4 -->
                 <div data-aos="fade-up" data-aos-delay="200"
-                    class="flex items-start gap-4 p-5 rounded-2xl bg-darkCard border border-white/5 hover:border-white/20 transition-all shadow-lg shadow-black/50">
-                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">👕</span>
-                    <div>
-                        <p class="font-black text-white text-base md:text-lg leading-snug">Ideal para camisetas, tazas,
-                            termos, mochilas, fundas y lo que imagines</p>
-                        <p class="text-sm text-gray-400 mt-1">Diseños versátiles que se adaptan a cualquier producto y
-                            nicho.</p>
+                    class="bg-darkCard p-6 rounded-2xl border border-white/5 hover:border-red-500/50 transition-colors">
+                    <div class="w-12 h-12 rounded-full bg-red-500/10 flex items-center justify-center mb-4">
+                        <span class="text-2xl">💸</span>
                     </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">Costos Asfixiantes</h3>
+                    <p class="text-gray-400 text-sm">Contratas diseñadores en Fiverr o Upwork, te cobran $15 o $20
+                        dólares por UN SOLO DISEÑO y tardan días en entregar. Tu margen de ganancia desaparece.</p>
                 </div>
-                <!-- Característica 5 -->
-                <div data-aos="fade-up" data-aos-delay="250"
-                    class="flex items-start gap-4 p-5 rounded-2xl bg-darkCard border border-white/5 hover:border-white/20 transition-all shadow-lg shadow-black/50">
-                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">🕐</span>
-                    <div>
-                        <p class="font-black text-white text-base md:text-lg leading-snug">Ahorra 500+ horas de trabajo
-                            con +45,000 personajes organizados</p>
-                        <p class="text-sm text-gray-400 mt-1">Todo clasificado, todo al alcance. Directo al grano.</p>
-                    </div>
-                </div>
-                <!-- Característica 6 -->
                 <div data-aos="fade-up" data-aos-delay="300"
-                    class="flex items-start gap-4 p-5 rounded-2xl bg-darkCard border border-white/5 hover:border-white/20 transition-all shadow-lg shadow-black/50">
-                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">🛠️</span>
-                    <div>
-                        <p class="font-black text-white text-base md:text-lg leading-snug">Formatos editables incluidos
-                            — PNG, PSD, PDF, AI y más</p>
-                        <p class="text-sm text-gray-400 mt-1">Máxima flexibilidad para personalizar cada diseño a tu
-                            gusto.</p>
+                    class="bg-darkCard p-6 rounded-2xl border border-white/5 hover:border-red-500/50 transition-colors">
+                    <div class="w-12 h-12 rounded-full bg-red-500/10 flex items-center justify-center mb-4">
+                        <span class="text-2xl">📉</span>
                     </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">Te Quedas Atrás</h3>
+                    <p class="text-gray-400 text-sm">Mientras tú estás varado buscando el diseño perfecto bajado de
+                        Google, tu competencia acaba de lanzar 50 nuevos modelos en su tienda y se está llevando a tus
+                        clientes.</p>
                 </div>
             </div>
         </div>
@@ -2642,7 +2663,7 @@ body {
                     <a href="https://mpt69i-rg.myshopify.com/cart/43899691171927:1" target="_blank"
                         rel="noopener noreferrer" class="block w-full">
                         <button
-                            class="pulse-btn w-full py-5 md:py-6 rounded-xl bg-gradient-to-r from-neonPink to-purple-600 hover:from-pink-500 hover:to-purple-500 text-white font-black text-xl md:text-2xl transition-all shadow-[0_10px_20px_rgba(232,48,140,0.3)] hover:shadow-[0_15px_30px_rgba(232,48,140,0.5)] transform hover:-translate-y-1">
+                            class="pulse-btn btn-neon-green w-full py-5 md:py-6 rounded-xl text-white font-black text-xl md:text-2xl transition-all transform hover:-translate-y-1">
                             ¡SÍ! QUIERO DESCARGAR TODO AHORA
                         </button>
                     </a>
@@ -3014,7 +3035,7 @@ body {
             <a href="https://mpt69i-rg.myshopify.com/cart/43899691171927:1" target="_blank"
                 rel="noopener noreferrer" class="inline-block w-full max-w-sm">
                 <button
-                    class="pulse-btn w-full py-4 rounded-xl bg-neonPink hover:bg-pink-500 text-white font-black text-xl transition-all">
+                    class="pulse-btn btn-neon-green w-full py-4 rounded-xl text-white font-black text-xl transition-all transform hover:-translate-y-1">
                     COMPRAR POR $19.900 COP
                 </button>
             </a>
