@@ -2214,9 +2214,9 @@ body {
                     Calidad Real
                 </div>
 
-                <video id="hero-video" loop muted playsinline autoplay preload="auto" poster="https://res.cloudinary.com/daijidw3t/video/upload/f_auto,q_auto/v1779977047/0528_swgvfv.jpg"
+                <video id="hero-video" loop muted playsinline autoplay preload="auto" poster="https://res.cloudinary.com/daijidw3t/video/upload/f_auto,q_auto/v1779983784/Se_2.0_o8sswl.jpg"
                     class="w-full h-full object-cover relative z-10 opacity-90 hover:opacity-100 transition-opacity">
-                    <source src="https://res.cloudinary.com/daijidw3t/video/upload/v1779977047/0528_swgvfv.mp4" type="video/mp4">
+                    <source src="https://res.cloudinary.com/daijidw3t/video/upload/v1779983784/Se_2.0_o8sswl.mp4" type="video/mp4">
                 </video>
             </div>
 
@@ -3177,10 +3177,10 @@ body {
             if (heroVid) {
                 heroVid.play().catch(() => {});
                 
-                // Zero delay loop handling (forces loop at 9.0s to bypass video end error)
+                // Zero delay loop handling
                 heroVid.addEventListener('timeupdate', function() {
-                    // Reset slightly before 9.0s (at 8.92s) for a seamless loop transition
-                    if (this.currentTime >= 8.92) {
+                    // Reset slightly before the absolute end to avoid browser delay
+                    if (this.currentTime >= this.duration - 0.08) {
                         this.currentTime = 0;
                         this.play().catch(() => {});
                     }
